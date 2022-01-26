@@ -10,14 +10,17 @@ for the losing party so, even though the 'Uber Agent'
 is far more skilled than the others, their chance of winning is about the same.
 
 ##Implementation
-To do this I gave the agents a new member variable : 
+To do this I gave the agents a new member variable :
+
 ![image](https://user-images.githubusercontent.com/96822243/151254252-932a0e84-de71-4ff1-9cfd-9da550bdda1d.png)
+
 When the agent eats food or a smaller agent, the size increase gets multiplied by this value.
 
 
 Every frame I compare the 'Uber Agent' to the largest opponent,
 then I use the size of the uber agent divided by the size of the largest opponent
 to calculate a maximum multiplier for all agents :
+
 ![image](https://user-images.githubusercontent.com/96822243/151254762-a1f4b361-e2ec-4f58-84be-81e789eab5a9.png)
 
 I then use this to calculate the modifier for all enemies and clamp it
@@ -28,6 +31,7 @@ If all agents were about the same size because could get really high multipliers
 then it would seem a bit unrealistic and the use of a multiplier would be too obvious.
 
 The uber agent always has a multiplier of 1.
+
 ![image](https://user-images.githubusercontent.com/96822243/151255444-c0414d15-081f-4c1d-81e1-7e664b562881.png)
 
 ##Result
