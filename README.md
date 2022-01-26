@@ -24,11 +24,13 @@ to calculate a maximum multiplier for all agents :
 ![image](https://user-images.githubusercontent.com/96822243/151254762-a1f4b361-e2ec-4f58-84be-81e789eab5a9.png)
 
 I then use this to calculate the modifier for all enemies and clamp it
-so it isn't larget than this maximum.
+so it isn't larger than this maximum.
 This way even really small opponents can't get an incredibly high multiplier,
 because of this it will always be a battle between the 'Uber Agent' and 1 powerful opponent.
 If all agents were about the same size because could get really high multipliers 
 then it would seem a bit unrealistic and the use of a multiplier would be too obvious.
+
+![image](https://user-images.githubusercontent.com/96822243/151256750-b29798ed-d309-492b-9a46-a7827d0ac96c.png)
 
 The uber agent always has a multiplier of 1.
 
